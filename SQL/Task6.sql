@@ -1,0 +1,1 @@
+SELECT Events.title,COUNT(Resources.resource_id) AS Count FROM Events LEFT JOIN Resources ON Events.event_id=Resources.event_id GROUP BY Events.event_id,Events.title;
