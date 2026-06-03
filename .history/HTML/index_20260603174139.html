@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+
+<title> EVENT PORTAL</title>
+<style>
+#welcomeBanner{
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: pink;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>  
+ <!-- Navigation  -->
+<header>
+    <nav>
+        <a href="#home"> Home </a> |
+        <a href="#about"> About </a> |
+<a href="#events"> Events </a> | 
+<a href="#contacts">Contacts</a> |
+<a href="help.html" target="_blank">Help</a>
+ </nav>
+
+    </header>
+    <!-- Main -->
+    <main>
+ <h1> COGNIZANT </h1>
+ <section id="home">
+    <div id="welcomeBanner">
+            <h2>Welcome to COGNIZANT!</h2>
+            <p>We are excited to have you here. Explore our website to learn more about us and our events.</p>
+        <span style="color: red;">Don't miss our upcoming events!</span>
+    </div>
+      <p> Dont miss our <span class="highlight">Annual City Fair </span></p>
+
+
+        </section>
+ <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to COGNIZANT!</p>
+        </section>
+  <section id="events">
+            <h2>Events</h2>
+            <p>Check out our upcoming events and activities.</p>  
+            </section>      
+<section id="contacts">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any inquiries or support.</p>
+        </section>
+    </main>
+
+<!-- Footer -->
+        <footer>
+            <p> &copy; 2024 COGNIZANT. All rights reserved. </p>
+            </footer>
+
+-- create a table
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  gender TEXT NOT NULL
+);
+-- insert some values
+INSERT INTO students VALUES (1, 'Ryan', 'M');
+INSERT INTO students VALUES (2, 'Joanna', 'F');
+-- fetch some values
+SELECT * FROM students 
+
+
+
+
+</body>

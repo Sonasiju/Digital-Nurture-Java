@@ -1,0 +1,1 @@
+SELECT user_id FROM Registrations GROUP BY user_id HAVING DATEDIFF(NOW(), MAX(registration_date)) > 90;
