@@ -1,0 +1,1 @@
+SELECT Users.user_id, Users.full_name,COUNT(Feedback.feedback_id) AS feedback_count FROM Users LEFT JOIN Feedback ON Users.user_id = Feedback.user_id GROUP BY Users.user_id, Users.full_name ORDER BY feedback_count DESC LIMIT 5;

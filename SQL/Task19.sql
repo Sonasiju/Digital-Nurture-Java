@@ -1,0 +1,1 @@
+SELECT Events.title, COUNT(Registrations.registration_id), AVG(Feedback.rating) FROM Events LEFT JOIN Registrations ON Events.event_id = Registrations.event_id LEFT JOIN Feedback ON Registrations.event_id = Feedback.event_id WHERE Events.status = 'completed' GROUP BY Events.event_id, Events.title;
